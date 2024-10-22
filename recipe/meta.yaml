@@ -1,5 +1,5 @@
 {% set name = "envier" %}
-{% set version = "0.4.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/envier-{{ version }}.tar.gz
-  sha256: e68dcd1ed67d8b6313883e27dff3e701b7fba944d2ed4b7f53d0cc2e12364a82
+  sha256: 3309a01bb3d8850c9e7a31a5166d5a836846db2faecb79b9cb32654dd50ca9f9
 
 build:
-  noarch : python 
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
